@@ -1,0 +1,56 @@
+1. CREATING DATABASES
+    - Execute SQL code -> Lightning icon
+    - Load databases -> Refresh icon in "Schemas" tab
+    - SQL keywords should be uppercased
+    - Access database -> USE [DATABASE NAME]
+    - Every query line must be terminated with a semicolon
+    - Shortcut to execute all/selection -> CTRL + SHIFT + ENTER
+    - Order of read queries -> SELECT, FROM, WHERE, ORDER by
+    - It's good practice to split queries into multiple lines
+    - Lines preceded by "--" are treated as comments
+
+
+2. SELECT CLAUSE
+    - Select all table columns -> SELECT *
+    - Select specific columns -> SELECT column1, column2, column3
+    - Selected columns will be shown in the specified Order
+    - +, -, *, /, % are available as mathematic operations in SELECT statements
+    - Label computed column -> AS clause (e.g. SELECT order_total * 0.75 AS discounted_total)
+    - Select unique values in a table column -> SELECT DISTINCT column_name FROM table_name
+
+3. WHERE CLAUSE
+    - Filter products by fields -> WHERE keyword (e.g. SELECT * FROM table WHERE quantity >= 50)
+    - Comparison operators: <, <=, >, >=, =, != (<>)
+    - Strings must be encapsulated in quotes
+    - Date format in MySQL -> 'YYYY-MM-DD'
+
+4. AND, OR, NOT, IN, BETWEEN OPERATORS
+    - Multiple conditions in WHERE statement -> condition1 AND condition2
+    - AND/OR/NOT can be combined with IN
+    - Between -> BETWEEN value1 AND value2
+
+
+COMMANDS
+    USE database_name
+    SELECT column_name
+    AS column_alias
+    DISTINCT column_name
+    FROM table_name
+    JOIN table_name table_alias
+    LEFT JOIN table_name table_alias
+    RIGHT JOIN table_name table_alias
+    ON boolean_expression
+    WHERE boolean_expression
+    AND boolean_expression
+    OR boolean_expression
+    NOT boolean_expression
+    IN (value_1, value_2, value_3)
+    BETWEEN value_1 AND value_2
+    LIKE pattern
+    REGEXP (^, $, |, [])
+    IS NULL
+    IS NOT NULL
+    ORDER BY column_name
+    DESC
+    ASC
+    LIMIT offset, count
