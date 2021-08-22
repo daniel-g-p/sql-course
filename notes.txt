@@ -31,15 +31,16 @@
 
 
 COMMANDS
-    USE database_name
-    SELECT column_name
-    AS column_alias
-    DISTINCT column_name
-    FROM table_name
-    JOIN table_name table_alias
-    LEFT JOIN table_name table_alias
-    RIGHT JOIN table_name table_alias
-    ON boolean_expression
+    USE database_name -> Set database to be used
+    SELECT column_name -> Select columns to be shown
+    AS column_alias -> Name selected columns
+    DISTINCT column_name -> Select unique values in a column
+    FROM table_name -> Define data origin table
+    JOIN table_name table_alias -> Join another table into the query
+    LEFT JOIN table_name table_alias -> Join another table into the query while showing all records from the first table
+    RIGHT JOIN table_name table_alias -> Join another table into the query while showing all records from the second table
+    ON boolean_expression -> Define join condition
+    USING column_name
     WHERE boolean_expression
     AND boolean_expression
     OR boolean_expression
