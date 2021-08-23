@@ -40,7 +40,9 @@ COMMANDS
     LEFT JOIN table_name table_alias -> Join another table into the query while showing all records from the first table
     RIGHT JOIN table_name table_alias -> Join another table into the query while showing all records from the second table
     ON boolean_expression -> Define join condition
-    USING column_name
+    USING (column_1, column_2, column_3)
+    CROSS JOIN table_name table_alias
+    UNION query
     WHERE boolean_expression
     AND boolean_expression
     OR boolean_expression
@@ -55,3 +57,8 @@ COMMANDS
     DESC
     ASC
     LIMIT offset, count
+
+DATA TYPES
+    CHAR(length) -> String with a fixed length
+    VARCHAR(maxlength) -> String with a variable and capped length
+    
